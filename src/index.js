@@ -9,7 +9,7 @@ dotenv.config({
 connect_BD()
   .then(() => {
     app.listen(process.env.PORT || 3300, () => {
-      console.log(`Server is running on : ${process.env.PORT}`);
+      console.log(`Server is running on http://localhost:${process.env.PORT}`);
     });
   })
   .catch((error) => {
